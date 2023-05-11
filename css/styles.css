@@ -4057,6 +4057,8 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -6602,8 +6604,8 @@ textarea.form-control-lg {
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
-  width: 1px !important;
-  height: 1px !important;
+  width: 50px !important;
+  height: 50px !important;
   padding: 0 !important;
   margin: -1px !important;
   overflow: hidden !important;
@@ -11720,7 +11722,7 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../img/dog_sunset.jpg");
+  background-image: url("../img/dog_running.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -11776,4 +11778,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.carousel-inner {
+  display: grid;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }

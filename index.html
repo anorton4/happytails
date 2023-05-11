@@ -18,8 +18,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"
         type="text/css" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -99,532 +100,537 @@
         </div>
     </section>
     <!-- Carousel -->
-    <section class="page-section">
+    <section class="page-section bg-light">
         <div class="container">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Adoptable Dogs</h2>
                 <h3 class="section-subheading text-muted">Browse all our adoptable dogs.</h3>
             </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                        
+            <!-- Flexbox container -->
+            <div class="d-flex justify-content-center">
+                <!-- Prevent the slideshow to become larger than the inner images -->
+                <div style="max-width: 630px;">
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/tessa.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Garrus.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/Liara.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/Bruno_Pup.JPG" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Liara.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Mordin.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
 
-
-            <div class="text-center">
-                <p></p>
+            <div class="text-center mt-5">
                 <a class="btn btn-primary btn-xl text-uppercase" href="adoptable_dogs.html">Find Your Furever Match</a>
             </div>
-
-            <!-- About-->
-            <section class="page-section" id="about">
+        </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About Us</h2>
+                <h3 class="section-subheading text-muted">How our "tail" began and where we are now.</h3>
+            </div>
+            <ul class="timeline">
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/how_we_started.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4 class="subheading">How We Started</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Our passion for rescue dogs has been a driving force in the
+                                start of Happy Tails. Our very own pups are rescues and they have completely
+                                changed our lives for the better.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/HappyTails_Logo.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2016-2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">Founded in 2018, we wanted to start a rescue that not only
+                                places dogs in new homes, but focuses on finding the best fit for families and
+                                to provide continuing support for them.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/volunteer.png"
+                            alt="..." /></div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <h4>2018-Now</h4>
+                            <h4 class="subheading"></h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted">We started from rescuing about 20 dogs a year to now several
+                                hundred, thanks to our amazing staff, fosters, and volunteers.</p>
+                        </div>
+                    </div>
+                </li>
+    </section>
+    <!-- Success Stories -->
+    <section class="page-section bg-light" id="success">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Happy "Tails" to Tell</h2>
+                <h3 class="section-subheading text-muted">Our success stories</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/Bruno_big_scaled.JPG" alt="..." />
+                        <h4>Bruno</h4>
+                        <p class="text-muted">"Bruno has been amazing from day one. Happy Tails knew exactly
+                            what they were doing when we were matched with him."</p>
+                        <p class="text-muted">~Mike</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/Tali_grass_scaled.png" alt="..." />
+                        <h4>Tali</h4>
+                        <p class="text-muted">"Tali is our perfect little lamb! She is just a lovebug and
+                            completes our family."</p>
+                        <p class="text-muted">~Annie & Ryan</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="img/sten_new2.jpg" alt="..." />
+                        <h4>Sten</h4>
+                        <p class="text-muted">"Sten is the most loveable giant. We are so thankful for Happy
+                            Tails and their amazing adoption process."</p>
+                        <p class="text-muted">~Zoey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contact Us</h2>
+                <h3 class="section-subheading text-white">Ready to be matched with one of our dogs? Message us
+                    for an adoption application today!</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Your Name *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Your Email *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is
+                                required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
+                            </div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
+                                required.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Your Message *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is
+                                required.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Form submission successful!</div>
+                        To activate this form, sign up at
+                        <br />
+                        <a
+                            href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><a class="btn btn-primary btn-xl text-uppercase" href="HT_Contact.html">Send
+                        Message</a></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">Copyright &copy; Happy Tails Dog Rescue 2023</div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
                 <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">About Us</h2>
-                        <h3 class="section-subheading text-muted">How our "tail" began and where we are now.</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">River</h2>
+                                <p class="item-intro text-muted">Cocker Spaniel/Golden Retriever Mix</p>
+                                <img class="img-fluid d-block mx-auto" src="img/tessa.jpg" alt="..." />
+                                <p>River is a sweet girl who loves to play fetch and curl up next to you on the
+                                    couch.</p>
+                                <p>She's great with kids and other dogs.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Female
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        3 years old
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        40 lbs
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        Medium
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                    src="img/how_we_started.png" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="subheading">How We Started</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Our passion for rescue dogs has been a driving force in the
-                                        start of Happy Tails. Our very own pups are rescues and they have completely
-                                        changed our lives for the better.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid"
-                                    src="img/HappyTails_Logo.png" alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2016-2018</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Founded in 2018, we wanted to start a rescue that not only
-                                        places dogs in new homes, but focuses on finding the best fit for families and
-                                        to provide continuing support for them.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="img/volunteer.png"
-                                    alt="..." /></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2018-Now</h4>
-                                    <h4 class="subheading"></h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">We started from rescuing about 20 dogs a year to now several
-                                        hundred, thanks to our amazing staff, fosters, and volunteers.</p>
-                                </div>
-                            </div>
-                        </li>
-            </section>
-            <!-- Success Stories -->
-            <section class="page-section bg-light" id="success">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
                 <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Happy "Tails" to Tell</h2>
-                        <h3 class="section-subheading text-muted">Our success stories</h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="img/Bruno_big_scaled.JPG" alt="..." />
-                                <h4>Bruno</h4>
-                                <p class="text-muted">"Bruno has been amazing from day one. Happy Tails knew exactly
-                                    what they were doing when we were matched with him."</p>
-                                <p class="text-muted">~Mike</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="img/Tali_grass_scaled.png" alt="..." />
-                                <h4>Tali</h4>
-                                <p class="text-muted">"Tali is our perfect little lamb! She is just a lovebug and
-                                    completes our family."</p>
-                                <p class="text-muted">~Annie & Ryan</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="team-member">
-                                <img class="mx-auto rounded-circle" src="img/Sten_scaled.jpg" alt="..." />
-                                <h4>Sten</h4>
-                                <p class="text-muted">"Sten is the most loveable giant. We are so thankful for Happy
-                                    Tails and their amazing adoption process."</p>
-                                <p class="text-muted">~Zoey</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Garrus</h2>
+                                <p class="item-intro text-muted">German Shepherd/Labrador Mix</p>
+                                <img class="img-fluid d-block mx-auto" src="img/Garrus.jpg" alt="..." />
+                                <p>Garrus loves to run, chase squirrels, and give doggie kisses.</p>
+                                <p>Good with older kids. Garrus should be the only dog in the household.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Male
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        5 years old
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        50 lbs
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        Medium
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- Contact-->
-            <section class="page-section" id="contact">
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
                 <div class="container">
-                    <div class="text-center">
-                        <h2 class="section-heading text-uppercase">Contact Us</h2>
-                        <h3 class="section-subheading text-white">Ready to be matched with one of our dogs? Message us
-                            for an adoption application today!</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Liara</h2>
+                                <p class="item-intro text-muted">Border Collie mix.</p>
+                                <img class="img-fluid d-block mx-auto" src="img/Liara.jpg" alt="..." />
+                                <p>Liara is very smart and has lots of energy for playtime!</p>
+                                <p>Good with older kids and would prefer to be in a household with another dog.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Female
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        2 years old
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        35 lbs
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        High
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <div class="row align-items-stretch mb-5">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <!-- Name input-->
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name *"
-                                        data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <!-- Email address input-->
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *"
-                                        data-sb-validations="required,email" />
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is
-                                        required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.
-                                    </div>
-                                </div>
-                                <div class="form-group mb-md-0">
-                                    <!-- Phone number input-->
-                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *"
-                                        data-sb-validations="required" />
-                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is
-                                        required.</div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group form-group-textarea mb-md-0">
-                                    <!-- Message input-->
-                                    <textarea class="form-control" id="message" placeholder="Your Message *"
-                                        data-sb-validations="required"></textarea>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is
-                                        required.</div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center text-white mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a
-                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage">
-                            <div class="text-center text-danger mb-3">Error sending message!</div>
-                        </div>
-                        <!-- Submit Button-->
-                        <div class="text-center"><a class="btn btn-primary btn-xl text-uppercase"
-                                href="HT_Contact.html">Send Message</a></div>
-                    </form>
                 </div>
-            </section>
-            <!-- Footer-->
-            <footer class="footer py-4">
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 text-lg-start">Copyright &copy; Happy Tails Dog Rescue 2023</div>
-                        <div class="col-lg-4 my-3 my-lg-0">
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="col-lg-4 text-lg-end">
-                            <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- Portfolio Modals-->
-            <!-- Portfolio item 1 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">River</h2>
-                                        <p class="item-intro text-muted">Cocker Spaniel/Golden Retriever Mix</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/tessa.jpg" alt="..." />
-                                        <p>River is a sweet girl who loves to play fetch and curl up next to you on the
-                                            couch.</p>
-                                        <p>She's great with kids and other dogs.</p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Female
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                3 years old
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                40 lbs
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                Medium
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Zym</h2>
+                                <p class="item-intro text-muted">Yorkshire Terrier</p>
+                                <img class="img-fluid d-block mx-auto" src="img/Zym.jpg" alt="..." />
+                                <p>Zym loves to snuggle on the couch after the zoomies!</p>
+                                <p>Great family dog, but barks at other dogs on walks which just requires some
+                                    corrective training!</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Male
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        3 years
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        Small
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        Medium
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio item 2 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">Garrus</h2>
-                                        <p class="item-intro text-muted">German Shepherd/Labrador Mix</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/Garrus.jpg" alt="..." />
-                                        <p>Garrus loves to run, chase squirrels, and give doggie kisses.</p>
-                                        <p>Good with older kids. Garrus should be the only dog in the household.</p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Male
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                5 years old
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                50 lbs
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                Medium
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Mordin</h2>
+                                <p class="item-intro text-muted">Jack Russell Terrier Mix</p>
+                                <img class="img-fluid d-block mx-auto" src="img/Mordin.jpg" alt="..." />
+                                <p>Mordin is super curious and goes where his nose leads him!</p>
+                                <p>Would be great in an active household that loves the outdoors! Good with
+                                    older kids and tolerates other dogs.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Male
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        4 years
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        Small
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        High
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio item 3 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">Liara</h2>
-                                        <p class="item-intro text-muted">Border Collie mix.</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/Liara.jpg" alt="..." />
-                                        <p>Liara is very smart and has lots of energy for playtime!</p>
-                                        <p>Good with older kids and would prefer to be in a household with another dog.
-                                        </p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Female
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                2 years old
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                35 lbs
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                High
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Clara</h2>
+                                <p class="item-intro text-muted">American Foxhound/Bulldog Mix</p>
+                                <img class="img-fluid d-block mx-auto" src="img/Clara.jpg" alt="..." />
+                                <p>Clara is very gentle, loving, and sweet. She'll always want to be by your
+                                    side!</p>
+                                <p>Great family dog who loves kids! Clara has separation anxiety so she needs an
+                                    understanding family.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Sex:</strong>
+                                        Female
+                                    </li>
+                                    <li>
+                                        <strong>Age:</strong>
+                                        2 years
+                                    </li>
+                                    <li>
+                                        <strong>Weight:</strong>
+                                        60 lbs
+                                    </li>
+                                    <li>
+                                        <strong>Energy Level:</strong>
+                                        Low
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Portfolio item 4 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">Zym</h2>
-                                        <p class="item-intro text-muted">Yorkshire Terrier</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/Zym.jpg" alt="..." />
-                                        <p>Zym loves to snuggle on the couch after the zoomies!</p>
-                                        <p>Great family dog, but barks at other dogs on walks which just requires some
-                                            corrective training!</p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Male
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                3 years
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                Small
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                Medium
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio item 5 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">Mordin</h2>
-                                        <p class="item-intro text-muted">Jack Russell Terrier Mix</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/Mordin.jpg" alt="..." />
-                                        <p>Mordin is super curious and goes where his nose leads him!</p>
-                                        <p>Would be great in an active household that loves the outdoors! Good with
-                                            older kids and tolerates other dogs.</p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Male
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                4 years
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                Small
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                High
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Portfolio item 6 modal popup-->
-            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                                alt="Close modal" /></div>
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="modal-body">
-                                        <!-- Project details-->
-                                        <h2 class="text-uppercase">Clara</h2>
-                                        <p class="item-intro text-muted">American Foxhound/Bulldog Mix</p>
-                                        <img class="img-fluid d-block mx-auto" src="img/Clara.jpg" alt="..." />
-                                        <p>Clara is very gentle, loving, and sweet. She'll always want to be by your
-                                            side!</p>
-                                        <p>Great family dog who loves kids! Clara has separation anxiety so she needs an
-                                            understanding family.</p>
-                                        <ul class="list-inline">
-                                            <li>
-                                                <strong>Sex:</strong>
-                                                Female
-                                            </li>
-                                            <li>
-                                                <strong>Age:</strong>
-                                                2 years
-                                            </li>
-                                            <li>
-                                                <strong>Weight:</strong>
-                                                60 lbs
-                                            </li>
-                                            <li>
-                                                <strong>Energy Level:</strong>
-                                                Low
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                            type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Bootstrap core JS-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-            <!-- Core theme JS-->
-            <script src="js/scripts.js"></script>
-            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-            <!-- * *                               SB Forms JS                               * *-->
-            <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
