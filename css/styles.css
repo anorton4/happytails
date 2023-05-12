@@ -2225,7 +2225,7 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #7b7d6c;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
